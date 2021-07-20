@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 1,5;
+    letter-spacing: 1px;
+}
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url('./images/sky.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial{
+    padding: 30px 100px
+}
+
+article h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+
+article h1:after{
+    content: "";
+    height: 5px;
+    width: 225 px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    letter-spacing: 1.5px;
+}
+
+article img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 60px;
+    animation: overlay 5s;
+    /* animation-delay: .5s */
+}
+
+blockquote .cta {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top:30px ;
+    color: white;
+    /* animation: overlay 5s ease forwards;
+    animation-delay: .5s; */
+}
+
+blockquote .cta:hover{
+    color: white;
+    background-color: black;
+}
+
+article h5{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 30px;
+    
+} 
+
+article p{
+    font-size: 12px;
+
+}
+
+/* #hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+#hero.cta:hover {
+    color: white;
+    background-color: crimson;
+} */
+
+@keyframes overlay {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
